@@ -57,26 +57,26 @@ public class TestData {
 
 	//create library members
 	public void libraryMemberData() {
-		LibraryMember libraryMember = new LibraryMember("1001", "Geoffrey Duncan", "Opiyo", "641-223-2211", addresses.get(4));
+		LibraryMember libraryMember = new LibraryMember("1001", "Alexander", "Kisekka", "641-223-2245", addresses.get(4));
 		members.add(libraryMember);
-		libraryMember = new LibraryMember("1002", "Hillary", "Arinda", "702-998-2414", addresses.get(5));
-		members.add(libraryMember);
-		
-		libraryMember = new LibraryMember("1003", "Tonny", "Kakooza", "451-234-8811", addresses.get(6));
+		libraryMember = new LibraryMember("1002", "Tony", "Otim", "702-998-2414", addresses.get(5));
 		members.add(libraryMember);
 		
-		libraryMember = new LibraryMember("1004", "Talal", "Qaid", "641-472-2871", addresses.get(7));
+		libraryMember = new LibraryMember("1003", "Davies", "Wabuluka", "451-234-8811", addresses.get(6));
+		members.add(libraryMember);
+		
+		libraryMember = new LibraryMember("1004", "Jamal", "Kasule", "641-472-2871", addresses.get(7));
 		members.add(libraryMember);
 
-		libraryMember = new LibraryMember("1005", "Andy", "Rogers", "641-223-2210", addresses.get(4));
+		libraryMember = new LibraryMember("1005", "Jones", "Mariam", "641-223-2210", addresses.get(4));
 		members.add(libraryMember);
-		libraryMember = new LibraryMember("1006", "Drew", "Stevens", "702-998-2410", addresses.get(5));
-		members.add(libraryMember);
-
-		libraryMember = new LibraryMember("1007", "Sarah", "Eagleton", "451-234-8810", addresses.get(6));
+		libraryMember = new LibraryMember("1006", "Hadijah", "Hajat", "732-978-2560", addresses.get(5));
 		members.add(libraryMember);
 
-		libraryMember = new LibraryMember("1008", "Ricardo", "Montalbahn", "641-472-2870", addresses.get(7));
+		libraryMember = new LibraryMember("1007", "Sam", "Kazibwe", "451-234-8810", addresses.get(6));
+		members.add(libraryMember);
+
+		libraryMember = new LibraryMember("1008", "Mathew", "Luwaga", "0702-6987-523", addresses.get(7));
 		members.add(libraryMember);
 		
 		DataAccessFacade.loadMemberMap(members);	
@@ -88,14 +88,14 @@ public class TestData {
 	
 	List<Address> addresses = new ArrayList<Address>() {
 		{
-			add(new Address("101 S. Main", "Fairfield", "IA", "52556"));
-			add(new Address("51 S. George", "Georgetown", "MI", "65434"));
-			add(new Address("23 Headley Ave", "Seville", "Georgia", "41234"));
-			add(new Address("1 N. Baton", "Baton Rouge", "LA", "33556"));
-			add(new Address("5001 Venice Dr.", "Los Angeles", "CA", "93736"));
-			add(new Address("1435 Channing Ave", "Palo Alto", "CA", "94301"));
-			add(new Address("42 Dogwood Dr.", "Fairfield", "IA", "52556"));
-			add(new Address("501 Central", "Mountain View", "CA", "94707"));
+			add(new Address("102 N. Main", "Texas", "52556","TX"));
+			add(new Address("33 Frontera Drive", "RoundRock",  "65434","TX"));
+			add(new Address("23 Kimathi Ave", "Kampala",  "41234", "Georgia"));
+			add(new Address("1 N. Baton", "Baton Rouge", "33556","LA"));
+			add(new Address("5001 Venice Dr.", "Los Angeles", "93736","CA"));
+			add(new Address("1435 Channing Ave", "Palo Alto", "94301","CA"));
+			add(new Address("42 Dogwood Dr.", "Fairfield", "52556", "IA"));
+			add(new Address("501 Central", "Mountain View", "94707" ,"CA"));
 		}
 	};
 	@SuppressWarnings("serial")
