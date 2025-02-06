@@ -11,6 +11,7 @@ import java.util.List;
 
 public class SystemController implements ControllerInterface {
 	public static Auth currentAuth = null;
+	public static String name;
 
 
 	/**

@@ -31,9 +31,7 @@ import javax.swing.table.AbstractTableModel;
  *
  */
 class CustomTableModel extends AbstractTableModel {
-    
-	//this is a List of Object arrays
-    private List<Object[]> tableValues; 
+    private List<Object[]> tableValues;
     
     public void setTableValues(Object [][] vals) {
         tableValues = Arrays.asList(vals);
@@ -51,12 +49,7 @@ class CustomTableModel extends AbstractTableModel {
     public Object[][] getTableValues() {
         return (Object[][])tableValues.toArray();
     }
-    
-    /** This convenience method allows addition of a row of type Object.
-     * However, this can only be used if row is of type Object[].
-     * If not, the method exits without performing any operation.
-     * @param row
-     */
+
     public void addRow(Object row){
     	if(row instanceof Object[]){
     		addRow((Object[])row);

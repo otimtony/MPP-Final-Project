@@ -74,7 +74,6 @@ public class BookCheckoutWindow extends JFrame implements LibWindow {
         middleWrapperPanel.add(middlePanel,BorderLayout.NORTH);
         middleWrapperPanel.add(lowerPanel,BorderLayout.CENTER);
         setupBackButton();
-        setupTextArea();
         setTitle(title);
         setUpVerticalPane();
         getContentPane().add(splitPaneOuter);
@@ -90,13 +89,6 @@ public class BookCheckoutWindow extends JFrame implements LibWindow {
                 bottomPanel);
         splitPaneOuter.setDividerLocation(getHeight()*3/4);
         add(splitPaneOuter);
-    }
-
-    private void setupTextArea() {
-        textArea = new JTextArea("Welcome to the Book Checkout!");
-        textArea.setMaximumSize(new Dimension(500,10));
-        Util.adjustLabelFont(textArea,Util.DARK_BLUE,true);
-        bottomPanel.add(textArea,BorderLayout.NORTH);
     }
 
     @Override

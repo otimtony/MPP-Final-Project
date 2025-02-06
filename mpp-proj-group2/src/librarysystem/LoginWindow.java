@@ -189,33 +189,24 @@ public class LoginWindow extends JFrame implements LibWindow {
 				}
 
 				clearTextFields();
-				//JOptionPane.showMessageDialog(this,"Successfully logged-in");
 
 				// Create a custom message panel with a green checkmark
 				JPanel messagePanel = new JPanel(new BorderLayout());
-				JLabel messageLabel = new JLabel("Successfully logged-in");
-				messageLabel.setForeground(Color.BLUE);
-
-				// Create a green checkmark icon
-				ImageIcon greenCheckIcon = Util.createGreenCheckIcon();
-				JLabel iconLabel = new JLabel(greenCheckIcon);
+				JLabel messageLabel = new JLabel("logged in Successfully");
+				messageLabel.setForeground(Color.GREEN);
 
 				// Add the components to the message panel
-				messagePanel.add(iconLabel, BorderLayout.WEST);
 				messagePanel.add(messageLabel, BorderLayout.CENTER);
 
 				// Show the custom dialog
 				JOptionPane.showMessageDialog(this, messagePanel, "Success", JOptionPane.INFORMATION_MESSAGE);
-
 
 				LibrarySystem.hideAllWindows();
 				LibrarySystem.INSTANCE.setVisible(true);
 				LibrarySystem.INSTANCE.reload();
     		});
     	}
-
-
-
+		
 	private void clearTextFields() {
 		username.setText("");
 		password.setText("");
