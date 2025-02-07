@@ -225,10 +225,6 @@ public class AddBookWindow extends JFrame implements LibWindow {
                         newAuthors.add(authors.get(i));
                 }
 
-                int numberOfCopies = Integer.parseInt(numberOfCopiesTextField.getText());
-                if(numberOfCopies > 1)
-                    for(int i = 1; i < numberOfCopies; i++)
-                        book.addCopy();
                 try {
                     Book newBook = bookInterface.addBook(ISBNField.getText(), titleTextField.getText(), Integer.parseInt(maxCheckOutTextField.getText()),
                             newAuthors, List.of(book.getCopies()));

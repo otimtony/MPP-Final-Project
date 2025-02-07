@@ -122,8 +122,6 @@ public class AddBookCopyWindow extends JFrame implements LibWindow {
                 bookInterface.showInfo("");
                 //JOptionPane.showMessageDialog(this,"Copy of the book is added successfully.");
 
-
-
                 // Create a custom message panel with a green checkmark
                 JPanel messagePanel = new JPanel(new BorderLayout());
                 JLabel messageLabel = new JLabel("Copy of the book was added successfully ");
@@ -139,8 +137,6 @@ public class AddBookCopyWindow extends JFrame implements LibWindow {
 
                 // Show the custom dialog
                 JOptionPane.showMessageDialog(this, messagePanel, "Book copy added Successfully", JOptionPane.INFORMATION_MESSAGE);
-
-
 
 
 
